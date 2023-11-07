@@ -18,4 +18,4 @@ The Pomodoro Timer is a simple, customizable tool designed to help you stay focu
 
 ## Motivation
 
-Our aim is to provide an accessible tool that enhances productivity and focus. I believe in the power of the Pomodoro technique to reduce distractions and boost concentration, making it easier for you to accomplish tasks efficiently.
+My aim is to provide an accessible tool that enhances productivity and focus. I believe in the power of the Pomodoro technique to reduce distractions and boost concentration, making it easier for you to accomplish tasks efficiently.
