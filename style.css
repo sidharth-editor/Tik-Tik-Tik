@@ -1,0 +1,198 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: #0c1322; */
+    font-family: Inter;
+    background-image: radial-gradient(circle at 0 0,#0c1322,#0c1222 68%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main_box_uyt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    padding: 0 30px;
+    height: 72px;
+    /* background: rgb(36, 36, 36); */
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+}
+.main_outer_section{
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 25px
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_section_dark{
+    /* background-color: #515151; */
+    padding: 50px 20px;
+    max-width: 700px;
+    width: 100%;
+/*    padding: 50px 100px;*/
+}
+.btn_main_tab{
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 11px 21px;
+    /* height: 25px; */
+    cursor: pointer;
+    background: none rgb(26 35 74);
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    display: inline-flex;
+    font-weight: 500;
+}
+.dd_flex_btn_iuter{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.timer_text{
+    font-size: 170px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #7dd534;
+}
+.btn_stpYrtr{
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 20px 12px;
+    border-radius: 4px;
+    /* box-shadow: rgb(125 213 52) 0px 6px 0px; */
+    font-size: 22px;
+    height: 26px;
+    color: rgb(255 255 255);
+    font-weight: 500;
+    text-align: center;
+    width: 200px;
+    vertical-align: super;
+    background-color: #4e4e4e;
+    transition: color 0.5s ease-in-out 0s;
+    background-image: radial-gradient(circle at 0 0,#3b1ea8,#17395b 68%);
+}
+
+    
+.outr_main_boxyt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_main_box{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #82777729;
+    color: #eaeaea;
+    font-size: 16px;
+    /* border-bottom: 2px solid #ffffff; */
+    resize: none;
+    padding: 12px 12px;
+    position: relative;
+    line-height: 24px;
+    margin-top: 24px;
+    border-radius: 0px;
+    -webkit-transition: -webkit-filter 2s ease;
+    transition: -webkit-filter 2s ease;
+    transition: filter 2s ease;
+    transition: filter 2s ease,-webkit-filter 2s ease;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+   
+ .tick_btn_main_dot{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background: #1a234a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    color: #df325d;
+    color: #ffffff;
+ }   
+ .pos_relate_con{
+    padding-right: 62px;
+    position: relative;
+ }
+input {
+    outline: none;
+}
+.time_block_mnain{
+    position: relative;
+}
+.ConT-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 118px;
+    background-color: #ffffff;
+}
+.plus_icon{
+    right: -70px;
+}
+.minus_icon{
+    left:-70px ;
+}
+
+.clr_grt{
+    color: #fff;
+}
+.btn_main_tab.active{
+    background: #f33838;
+}
+.timer_text{
+    font-family: 'Inter','serif';
+    margin-bottom: 40px;
+}
+.btns_list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.btsns_grp svg{
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+.play_btn path,.pause_btn path,.settings_btn path{
+    fill: #d3d2d2;
+}
+.btsns_grp:hover .play_btn path,.pause_btn:hover path,.settings_btn:hover path{
+    fill: #7334f9;
+}
+.magic_cloud .dd_flex_btn_iuter,.magic_cloud .timer_text,.magic_cloud .btsns_grp,.magic_cloud .reset_task{
+    filter: blur(2px) opacity(0.3);
+}
+.read{
+    pointer-events: none;
+}
+@media only screen and (max-width: 600px){
+    .timer_text{
+        font-size: 90px;
+    }
+    .main_outer_section{
+        padding: 0px;
+    }
+}
