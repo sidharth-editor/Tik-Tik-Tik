@@ -1,146 +1,293 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tik Tik Tik | Focus single task</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
-    <link rel="shortcut icon" href="/icon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-    <header class="main_box_uyt">
-        <div>
-            <svg fill="currentColor" width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-104 76.3-190.2 176-205.5V64h-28c-6.6 0-12-5.4-12-12V12c0-6.6 5.4-12 12-12h120c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-28v34.5c37.5 5.8 71.7 21.6 99.7 44.6l27.5-27.5c4.7-4.7 12.3-4.7 17 0l28.3 28.3c4.7 4.7 4.7 12.3 0 17l-29.4 29.4-.6.6C419.7 223.3 432 262.2 432 304zm-176 36V188.5c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12V340c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"/></svg>
-        </div>
-    </header>
-
-    <main class="magic_cloud">
-        <section class="main_section_dark">
-            <div class="main_outer_section">
-
-                <div>
-                    <div class="dd_flex_btn_iuter">
-                        <div class="btn_main_tab active" role="button" data-text="25:00" data-duration="1500">  Pomodoro Session</div>
-                        <div class="btn_main_tab" role="button" data-text="05:00" data-duration="300">  Break Time </div>
-
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div class="outr_main_boxyt">
-                    <div class="time_block_mnain">
-                        <div class="timer_text">
-                            25:00
-                        </div>
-                        <!-- <span class="ConT-icon plus_icon"> <svg width="18px" height="18px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></span>
-                        <span class="ConT-icon minus_icon"> <svg width="18px" height="18px" fill="currentColor"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></span> -->
-                   
-                    </div>
-                    
-                    <div class="btns_list">
-                        <div class="btsns_grp ply_btn stop_play" style="display: none;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="play_btn" viewBox="0 0 24 24" fill="none">
-                                <rect width="24" height="24"><script xmlns=""/></rect>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14.5523 8 15 8.44772 15 9L15 15C15 15.5523 14.5523 16 14 16C13.4477 16 13 15.5523 13 15L13 9C13 8.44772 13.4477 8 14 8ZM10 8C10.5523 8 11 8.44772 11 9L11 15C11 15.5523 10.5523 16 10 16C9.44771 16 9 15.5523 9 15L9 9C9 8.44772 9.44772 8 10 8ZM7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782Z" fill="#323232"/>
-                            </svg>
-                        </div>
-                        <div class="btsns_grp pause_btn start_play" >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6935 15.8458L15.4137 13.059C16.1954 12.5974 16.1954 11.4026 15.4137 10.941L10.6935 8.15419C9.93371 7.70561 9 8.28947 9 9.21316V14.7868C9 15.7105 9.93371 16.2944 10.6935 15.8458Z" fill="#1C274C"><script xmlns=""/></path>
-                            </svg>
-                        </div>
-                        <!-- <div class="btsns_grp settings_btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" id="settings-alt" class="icon glyph"><path d="M21.9,10.59,20,8.69V6a2,2,0,0,0-2-2H15.31l-1.9-1.9a2,2,0,0,0-2.82,0L8.69,4H6A2,2,0,0,0,4,6V8.69l-1.9,1.9a2,2,0,0,0,0,2.82L4,15.31V18a2,2,0,0,0,2,2H8.69l1.9,1.9a2,2,0,0,0,2.82,0l1.9-1.9H18a2,2,0,0,0,2-2V15.31l1.9-1.9A2,2,0,0,0,21.9,10.59ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Z"><script xmlns=""/></path></svg>
-                        </div> -->
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <!-- <h3 class="clr_grt">Today</h3> -->
-                        <div class="pos_relate_con">
-                            <input class="input_main_box" placeholder="Whats's the one task you are going to do now? ( Min 5 chars & Press ENTER )" type="text">
-                            <div class="tick_btn_main_dot reset_task" title="Complete Task">
-                                <svg  wodth="18px" height="18px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <audio id="audioPlayer" style="display:none;">
-          <source src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav" type="audio/wav">
-          Your browser does not support the audio element.
-        </audio>
-    </main>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            window.left_duration = 0;
-            window.play = false;
-            var timer;
-            $('.start_play').click(function(){
-                let type = $('.btn_main_tab.active').data('duration');
-                $(this).hide().siblings('.stop_play').show();
-                window.left_duration = (window.left_duration > 1) ? window.left_duration : type;
-                window.play = true;
-                let el = $('.timer_text');
-                $('.input_main_box').addClass('read');
-                timer = setInterval(function(){
-                    if(window.play && window.left_duration>1){
-                        window.left_duration = window.left_duration - 1;
-                        let quotient = Math.floor(window.left_duration / 60);
-                        let remainder = window.left_duration % 60;
-                        remainder = (remainder < 10) ? `0${remainder}` : remainder;
-                        quotient = (quotient < 10) ? `0${quotient}` : quotient;
-                        el.text(`${quotient}:${remainder}`);
-                        document.title = `${quotient}:${remainder} - TIK TIK TIK`;
-                    }else if(window.left_duration === 1){
-                        $('.btn_main_tab.active').siblings('.btn_main_tab').trigger('click');
-                        $('#audioPlayer')[0].play();
-                    }
-                },1000);
-            });
-            $('.stop_play').click(function(){
-                $(this).hide().siblings('.start_play').show();
-                if(timer) clearInterval(timer);
-            });
-            $('.btn_main_tab').click(function(){
-                let text = $(this).data('text');
-                $(this).addClass('active').siblings().removeClass('active');
-                $('.timer_text').text(text);
-                if(timer) clearInterval(timer);
-                $('.stop_play').hide();
-                $('.start_play').show();
-                document.title = `Focus the single task - TIK TIK TIK`;
-                window.play = false;
-            });
-            $('.reset_task').click(function(){
-                $('.input_main_box').val('');
-                $('.btn_main_tab').first().trigger('click');
-                $('main').addClass('magic_cloud');
-                $('.input_main_box').removeClass('read');
-            });
-            $('.input_main_box').keydown(function(e){
-                let value = $(this).val();
-                console.log(e.which);
-                if(e.which == 13 && value.length >= 6){
-                    $('main').removeClass('magic_cloud');
-                }else{
-                    $('main').addClass('magic_cloud');
-                }
-            })
-        })
-    </script>
-</body>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tik Tik Tik | Focus single task</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
+
+    <link rel="shortcut icon" href="/icon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="main_box_uyt">
+
+        <div>
+
+            <svg fill="currentColor" width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-104 76.3-190.2 176-205.5V64h-28c-6.6 0-12-5.4-12-12V12c0-6.6 5.4-12 12-12h120c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-28v34.5c37.5 5.8 71.7 21.6 99.7 44.6l27.5-27.5c4.7-4.7 12.3-4.7 17 0l28.3 28.3c4.7 4.7 4.7 12.3 0 17l-29.4 29.4-.6.6C419.7 223.3 432 262.2 432 304zm-176 36V188.5c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12V340c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"/></svg>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="magic_cloud">
+
+        <section class="main_section_dark">
+
+            <div class="main_outer_section">
+
+
+
+                <div>
+
+                    <div class="dd_flex_btn_iuter">
+
+                        <div class="btn_main_tab active" role="button" data-text="25:00" data-duration="1500">  Pomodoro Session</div>
+
+                        <div class="btn_main_tab" role="button" data-text="05:00" data-duration="300">  Break Time </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <img src="" alt="">
+
+                </div>
+
+                <div class="outr_main_boxyt">
+
+                    <div class="time_block_mnain">
+
+                        <div class="timer_text">
+
+                            25:00
+
+                        </div>
+
+                        <!-- <span class="ConT-icon plus_icon"> <svg width="18px" height="18px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></span>
+
+                        <span class="ConT-icon minus_icon"> <svg width="18px" height="18px" fill="currentColor"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></span> -->
+
+                   
+
+                    </div>
+
+                    
+
+                    <div class="btns_list">
+
+                        <div class="btsns_grp ply_btn stop_play" style="display: none;">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="play_btn" viewBox="0 0 24 24" fill="none">
+
+                                <rect width="24" height="24"><script xmlns=""/></rect>
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14.5523 8 15 8.44772 15 9L15 15C15 15.5523 14.5523 16 14 16C13.4477 16 13 15.5523 13 15L13 9C13 8.44772 13.4477 8 14 8ZM10 8C10.5523 8 11 8.44772 11 9L11 15C11 15.5523 10.5523 16 10 16C9.44771 16 9 15.5523 9 15L9 9C9 8.44772 9.44772 8 10 8ZM7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782Z" fill="#323232"/>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="btsns_grp pause_btn start_play" >
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6935 15.8458L15.4137 13.059C16.1954 12.5974 16.1954 11.4026 15.4137 10.941L10.6935 8.15419C9.93371 7.70561 9 8.28947 9 9.21316V14.7868C9 15.7105 9.93371 16.2944 10.6935 15.8458Z" fill="#1C274C"><script xmlns=""/></path>
+
+                            </svg>
+
+                        </div>
+
+                        <!-- <div class="btsns_grp settings_btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" id="settings-alt" class="icon glyph"><path d="M21.9,10.59,20,8.69V6a2,2,0,0,0-2-2H15.31l-1.9-1.9a2,2,0,0,0-2.82,0L8.69,4H6A2,2,0,0,0,4,6V8.69l-1.9,1.9a2,2,0,0,0,0,2.82L4,15.31V18a2,2,0,0,0,2,2H8.69l1.9,1.9a2,2,0,0,0,2.82,0l1.9-1.9H18a2,2,0,0,0,2-2V15.31l1.9-1.9A2,2,0,0,0,21.9,10.59ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Z"><script xmlns=""/></path></svg>
+
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+
+
+                <div>
+
+                    <div>
+
+                        <!-- <h3 class="clr_grt">Today</h3> -->
+
+                        <div class="pos_relate_con">
+
+                            <input class="input_main_box" placeholder="Whats's the one task you are going to do now? ( Min 5 chars & Press ENTER )" type="text">
+
+                            <div class="tick_btn_main_dot reset_task" title="Complete Task">
+
+                                <svg  wodth="18px" height="18px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></svg>
+
+                            </div>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+        </section>
+
+        <audio id="audioPlayer" style="display:none;">
+
+          <source src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav" type="audio/wav">
+
+          Your browser does not support the audio element.
+
+        </audio>
+
+    </main>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            window.left_duration = 0;
+
+            window.play = false;
+
+            var timer;
+
+            $('.start_play').click(function(){
+
+                let type = $('.btn_main_tab.active').data('duration');
+
+                $(this).hide().siblings('.stop_play').show();
+
+                window.left_duration = (window.left_duration > 1) ? window.left_duration : type;
+
+                window.play = true;
+
+                let el = $('.timer_text');
+
+                $('.input_main_box').addClass('read');
+
+                timer = setInterval(function(){
+
+                    if(window.play && window.left_duration>1){
+
+                        window.left_duration = window.left_duration - 1;
+
+                        let quotient = Math.floor(window.left_duration / 60);
+
+                        let remainder = window.left_duration % 60;
+
+                        remainder = (remainder < 10) ? `0${remainder}` : remainder;
+
+                        quotient = (quotient < 10) ? `0${quotient}` : quotient;
+
+                        el.text(`${quotient}:${remainder}`);
+
+                        document.title = `${quotient}:${remainder} - TIK TIK TIK`;
+
+                    }else if(window.left_duration === 1){
+
+                        $('.btn_main_tab.active').siblings('.btn_main_tab').trigger('click');
+
+                        $('#audioPlayer')[0].play();
+
+                    }
+
+                },1000);
+
+            });
+
+            $('.stop_play').click(function(){
+
+                $(this).hide().siblings('.start_play').show();
+
+                if(timer) clearInterval(timer);
+
+            });
+
+            $('.btn_main_tab').click(function(){
+
+                let text = $(this).data('text');
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                $('.timer_text').text(text);
+                let duration = $(this).data('duration');
+                window.left_duration = duration;
+
+                if(timer) clearInterval(timer);
+
+                $('.stop_play').hide();
+
+                $('.start_play').show();
+
+                document.title = `Focus the single task - TIK TIK TIK`;
+
+                window.play = false;
+
+            });
+
+            $('.reset_task').click(function(){
+
+                $('.input_main_box').val('');
+
+                $('.btn_main_tab').first().trigger('click');
+
+                $('main').addClass('magic_cloud');
+
+                $('.input_main_box').removeClass('read');
+
+            });
+
+            $('.input_main_box').keydown(function(e){
+
+                let value = $(this).val();
+
+                // console.log(e.which);
+
+                if(e.which == 13 && value.length >= 6){
+
+                    $('main').removeClass('magic_cloud');
+
+                }else{
+
+                    $('main').addClass('magic_cloud');
+
+                }
+
+            })
+
+        })
+
+    </script>
+
+</body>
+
 </html>
